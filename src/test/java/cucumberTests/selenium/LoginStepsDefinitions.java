@@ -20,6 +20,13 @@ public class LoginStepsDefinitions extends Fixture {
         ellos().mainPage.isOpenPage("GLogo");
     }
 
+    @Given("^I sout$")
+    public void I_sout() throws Throwable {
+        log.info("NewTest");
+        log.info("NewTest");
+        log.info("NewTest");
+        log.info("NewTest");
+    }
 
     /**
      Preconditions

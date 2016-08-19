@@ -11,6 +11,8 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <suiteXmlFile>testng.xml</suiteXmlFile>
+
+        <tags>"@Login"</tags>
     </properties>
 
     <profiles>
@@ -117,7 +119,7 @@
             <id>se</id>
             <properties>
                 <location>se/</location>
-                <featuresDirectory>src/test/resources/features/se/</featuresDirectory>
+                <!--<featuresDirectory>src/test/resources/features/se/</featuresDirectory>-->
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -127,7 +129,7 @@
             <id>no</id>
             <properties>
                 <location>no/</location>
-                <featuresDirectory>src/test/resources/features/no/</featuresDirectory>
+                <!--<featuresDirectory>src/test/resources/features/no/</featuresDirectory>-->
             </properties>
         </profile>
         <profile>
@@ -394,7 +396,7 @@
                             <format>json,testng,html,pretty,junit</format>
                             <strict>true</strict>
                             <monochrome>true</monochrome>
-                            <tags>"@Login"</tags>
+                            <!--<tags>"@Login"</tags>-->
                             <!-- The tags to run, maps to CucumberOptions.tags property -->
                             <tags>${tags}</tags>
                             <!-- If set to true, only feature files containing the required tags shall be generated. -->
