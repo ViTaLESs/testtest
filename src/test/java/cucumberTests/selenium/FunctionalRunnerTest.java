@@ -7,7 +7,7 @@ import cucumber.api.CucumberOptions;
 		//glue = "src/test/java/cucumberTests/selenium/glue/*Definitions",
 		monochrome = true,
 		plugin = {"pretty", "html:target/report/cucumber-report", "json:target/report/jsonReport/cucumber-report.json"},
-		features = {"src/test/resources/features/"}
+		features = {"src/test/resources/features/se"}
 		//,
 		//tags = {"@AreTestProductsAvailable?, @MainPage, @Login, @Registration, @RegistrationInCheckout, @ErrorPage, @Search, @ProductLineup,  @PDP, @Size, @Color, @Image, @Mini_cart, @WishlistFromPDP, @WishlistFromBasket, @WishlistFromCheckoutPage, @KontoFlow, @CODFlow, @FakturaFlow, @CreditCardFlow"}
 		//tags = {"@Checkout-"}
