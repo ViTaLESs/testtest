@@ -31,8 +31,8 @@ public class Fixture extends AbstractTestNGCucumberTests {
 
     @BeforeSuite
     public void setUpSuite(){
-        if (ru.stqa.selenium.factory.WebDriverFactory.isEmpty())
-            WebDriverFactory.setMode(WebDriverFactoryMode.THREADLOCAL_SINGLETON);
+        /*if (ru.stqa.selenium.factory.WebDriverFactory.isEmpty())
+            WebDriverFactory.setMode(WebDriverFactoryMode.THREADLOCAL_SINGLETON);*/
         log.info("<--- Start test suite --->");
     }
 
@@ -40,7 +40,7 @@ public class Fixture extends AbstractTestNGCucumberTests {
     @BeforeTest(alwaysRun = true)
     @Parameters("browser")
     public void init(@Optional String browser) {
-        if (browser == null) Assert.fail("Browser - " + browser + "!");
+        /*if (browser == null) Assert.fail("Browser - " + browser + "!");
 
         UIMappingSingleton.getInstance();
 
@@ -55,20 +55,20 @@ public class Fixture extends AbstractTestNGCucumberTests {
         webDriverWrapper.manage().timeouts().pageLoadTimeout(Long.parseLong(LOADING_PAGE), TimeUnit.SECONDS);
 
         webDriverWrapper.manage().deleteAllCookies();
-        webDriverWrapper.manage().window().maximize();
+        webDriverWrapper.manage().window().maximize();*/
         log.info("<--- Start tests --->");
     }
 
     @AfterTest(alwaysRun = true)
     public void tearDownTest() {
-        ELLOS.remove(currentThread().getId());
+        //ELLOS.remove(currentThread().getId());
         //WebDriverFactory.dismissDriver(webDriverWrapper.getOriginalDriver());
         log.info("<--- Test finished --->");
     }
 
     @AfterSuite(alwaysRun = true)
     public void tearDownSuite() {
-        WebDriverFactory.dismissAll();
+        //WebDriverFactory.dismissAll();
         log.info("<--- Test suite finished --->");
     }
 
