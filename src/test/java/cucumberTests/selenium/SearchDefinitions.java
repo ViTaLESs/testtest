@@ -3,7 +3,7 @@ package cucumberTests.selenium;
 import cucumber.api.java.en.*;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
-import utils.ClassNameUtil;
+import utils.*;
 
 /**
  * Created by lavi on 4/15/2016.

@@ -11,7 +11,7 @@ import cucumber.api.CucumberOptions;
 		//,
 		//tags = {"@AreTestProductsAvailable?, @MainPage, @Login, @Registration, @RegistrationInCheckout, @ErrorPage, @Search, @ProductLineup,  @PDP, @Size, @Color, @Image, @Mini_cart, @WishlistFromPDP, @WishlistFromBasket, @WishlistFromCheckoutPage, @KontoFlow, @CODFlow, @FakturaFlow, @CreditCardFlow"}
 		//tags = {"@Checkout-"}
-		//tags = {"@Test"}
+		/*tags = {"@a"}*/
 )
 //TODO Size - delete comments T8,11,12
 public class FunctionalRunnerTest extends Fixture {

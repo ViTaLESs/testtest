@@ -2,16 +2,12 @@ package cucumberTests.selenium;
 
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import utils.*;
-import junit.framework.Assert;
 import org.apache.log4j.Logger;
 import org.testng.annotations.*;
-import ru.stqa.selenium.factory.WebDriverFactory;
-import ru.stqa.selenium.factory.WebDriverFactoryMode;
 import pages.Ellos;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.TimeUnit;
 
 import static java.lang.Thread.currentThread;
 
@@ -21,8 +17,6 @@ public class Fixture extends AbstractTestNGCucumberTests {
     public WebDriverWrapper webDriverWrapper;
     private static final String IMPLICIT_WAIT = PropertyLoader.loadProperty("selenium.implicit.timeout");
     private static final String LOADING_PAGE= PropertyLoader.loadProperty("selenium.pageLoad.timeout");
-
-    private static final String browser= PropertyLoader.loadProperty("browser.name");
 
     private static final Logger log = Logger.getLogger(ClassNameUtil.getCurrentClassName());
 
@@ -41,8 +35,8 @@ public class Fixture extends AbstractTestNGCucumberTests {
 
 
     @BeforeTest(alwaysRun = true)
-    //@Parameters("browser")
-    public void init(/*@Optional */) {
+    @Parameters("browser")
+    public void init(@Optional String browser) {
         webDriverWrapper = new WebDriverWrapper(new MyWebDriverFactory().getInstance(browser));
 
         /*if (browser == null) Assert.fail("Browser - " + browser + "!");

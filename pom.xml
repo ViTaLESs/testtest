@@ -22,6 +22,8 @@
                 <browser.name>firefox</browser.name>
                 <browser.version>47.0</browser.version>
                 <browser.platform>windows</browser.platform>
+
+                <suiteXmlFile>testng.xml</suiteXmlFile>
             </properties>
         </profile>
         <profile>
@@ -30,6 +32,8 @@
                 <browser.name>chrome</browser.name>
                 <browser.version>51.0</browser.version>
                 <browser.platform>windows</browser.platform>
+
+                <suiteXmlFile>testng1.xml</suiteXmlFile>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -116,7 +120,6 @@
             <id>se</id>
             <properties>
                 <location>se/</location>
-                <!--<featuresDirectory>src/test/resources/features/se/</featuresDirectory>-->
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -126,7 +129,6 @@
             <id>no</id>
             <properties>
                 <location>no/</location>
-                <!--<featuresDirectory>src/test/resources/features/no/</featuresDirectory>-->
             </properties>
         </profile>
         <profile>
@@ -312,13 +314,13 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19</version>
                 <configuration>
-                    <suiteXmlFiles>
+<!--                    <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
+                    </suiteXmlFiles>-->
 
-                    <!--<suiteXmlFiles>
+                    <suiteXmlFiles>
                             <suiteXmlFile>src/test/resources/${suiteXmlFile}</suiteXmlFile>
-                         </suiteXmlFiles>-->
+                         </suiteXmlFiles>
                 </configuration>
             </plugin>
             <plugin>

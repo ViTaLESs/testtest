@@ -8,38 +8,25 @@
         </classes>
     </test>
 
-    <!--<test name="WindowsChrome2" parallel="tests">
-        <parameter name="browser" value="chrome"/>
+    <test name="WindowsChrome2" parallel="tests">
+        <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="FunctionalRunnerTest"/>
+            <class name="cucumberTests.selenium.FunctionalRunnerTest"/>
         </classes>
-    </test>-->
+    </test>
 
-    <!--<test name="WindowsChrome3" parallel="tests">
-        <parameter name="browser" value="chrome"/>
+    <test name="WindowsChrome3" parallel="tests">
+        <parameter name="browser" value="ie"/>
         <classes>
-            <class name="FunctionalRunnerTest"/>
+            <class name="cucumberTests.selenium.FunctionalRunnerTest"/>
         </classes>
     </test>
 
     <test name="WindowsChrome4" parallel="tests">
-        <parameter name="browser" value="chrome"/>
+        <parameter name="browser" value="safari"/>
         <classes>
-            <class name="FunctionalRunnerTest"/>
+            <class name="cucumberTests.selenium.FunctionalRunnerTest"/>
         </classes>
     </test>
 
-    <test name="WindowsChrome5" parallel="tests">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="FunctionalRunnerTest"/>
-        </classes>
-    </test>
-
-    <test name="WindowsChrome6" parallel="tests">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="FunctionalRunnerTest"/>
-        </classes>
-    </test>-->
 </suite>

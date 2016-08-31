@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test runner" verbose="1" parallel="tests" configfailurepolicy="continue" thread-count="10">
+
+    <test name="WindowsChrome" parallel="tests">
+        <parameter name="browser" value="ie" />
+        <classes>
+            <class name="cucumberTests.selenium.FunctionalRunnerTest"/>
+        </classes>
+    </test>
+
+    <!--<test name="WindowsChrome2" parallel="tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="FunctionalRunnerTest"/>
+        </classes>
+    </test>-->
+
+    <!--<test name="WindowsChrome3" parallel="tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="FunctionalRunnerTest"/>
+        </classes>
+    </test>
+
+    <test name="WindowsChrome4" parallel="tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="FunctionalRunnerTest"/>
+        </classes>
+    </test>
+
+    <test name="WindowsChrome5" parallel="tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="FunctionalRunnerTest"/>
+        </classes>
+    </test>
+
+    <test name="WindowsChrome6" parallel="tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="FunctionalRunnerTest"/>
+        </classes>
+    </test>-->
+</suite>
