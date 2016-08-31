@@ -1,5 +1,6 @@
 package cucumberTests.selenium;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
@@ -176,4 +177,22 @@ public class LoginStepsDefinitions extends Fixture {
         ellos().checkoutPage.switchToMainPage();
     }
 
+
+    @Given("^a$")
+    public void a() {
+        System.out.println("a");
+        log.info("a");
+    }
+
+    @Given("^b$")
+    public void b() {
+        System.out.println("b");
+        log.info("b");
+    }
+
+    @Given("^c$")
+    public void c() {
+        System.out.println("c");
+        log.info("c");
+    }
 }

@@ -1,10 +1,13 @@
 Feature: test jenkins
 
-  @Test
+  @1
   Scenario: Test1 - Positive - go to google
-    Given I go to google
+    Given a
 
-  @NewTest
+  @2
   Scenario: Test2 - Positive - go to google New new new
-    Given I go to google
-    Given I sout
+    Given b
+
+  @3
+  Scenario: Test2 - Positive - go to google New new new
+    Given c
