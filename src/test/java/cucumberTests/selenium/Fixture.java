@@ -40,6 +40,8 @@ public class Fixture extends AbstractTestNGCucumberTests {
     @BeforeTest(alwaysRun = true)
     @Parameters("browser")
     public void init(@Optional String browser) {
+        webDriverWrapper = new WebDriverWrapper(new MyWebDriverFactory().getInstance(browser));
+
         /*if (browser == null) Assert.fail("Browser - " + browser + "!");
 
         UIMappingSingleton.getInstance();
