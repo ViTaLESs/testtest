@@ -65,7 +65,7 @@
             <id>local</id>
             <properties>
                 <env>local</env>
-                <grid2.hub>http://localhost:4444/wd/hub</grid2.hub>
+                <grid2.hub>http://192.168.1.6:4444/wd/hub</grid2.hub>
             </properties>
 
             <!--    For debug    -->
