@@ -21,6 +21,9 @@ public class Fixture extends AbstractTestNGCucumberTests {
     public WebDriverWrapper webDriverWrapper;
     private static final String IMPLICIT_WAIT = PropertyLoader.loadProperty("selenium.implicit.timeout");
     private static final String LOADING_PAGE= PropertyLoader.loadProperty("selenium.pageLoad.timeout");
+
+    private static final String browser= PropertyLoader.loadProperty("browser.name");
+
     private static final Logger log = Logger.getLogger(ClassNameUtil.getCurrentClassName());
 
     public static final Map<Long, Ellos> ELLOS = new ConcurrentHashMap<>();
@@ -38,8 +41,8 @@ public class Fixture extends AbstractTestNGCucumberTests {
 
 
     @BeforeTest(alwaysRun = true)
-    @Parameters("browser")
-    public void init(@Optional String browser) {
+    //@Parameters("browser")
+    public void init(/*@Optional */) {
         webDriverWrapper = new WebDriverWrapper(new MyWebDriverFactory().getInstance(browser));
 
         /*if (browser == null) Assert.fail("Browser - " + browser + "!");
