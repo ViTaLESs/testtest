@@ -12,7 +12,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <suiteXmlFile>testng.xml</suiteXmlFile>
 
-        <tags>"@Login"</tags>
+        <!--<tags>"@Login"</tags>-->
+        <tags>${tags}</tags>
     </properties>
 
     <profiles>
@@ -66,15 +67,13 @@
             <id>local</id>
             <properties>
                 <env>local</env>
-                <grid2.hub>http://172.29.32.118:4444/wd/hub</grid2.hub>
+                <grid2.hub>http://192.168.1.6:4444/wd/hub</grid2.hub>
             </properties>
 
             <!--    For debug    -->
-<!--
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
--->
 
         </profile>
         <profile>
@@ -83,9 +82,9 @@
                 <env>ellosHub</env>
                 <grid2.hub>http://seleniumhub:4444/wd/hub</grid2.hub>
             </properties>
-            <activation>
+<!--            <activation>
                 <activeByDefault>true</activeByDefault>
-            </activation>
+            </activation>-->
         </profile>
 
         <!-- environmental -->
