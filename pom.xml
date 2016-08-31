@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--<tags>"@Login"</tags>-->
         <!--<tags>${tags}</tags>-->
-        <suiteXmlFile>testng3.xml</suiteXmlFile>
+        <suiteXmlFile>testng.xml</suiteXmlFile>
     </properties>
 
     <profiles>
@@ -24,7 +24,7 @@
                 <browser.version>47.0</browser.version>
                 <browser.platform>windows</browser.platform>
 
-                <suiteXmlFile>testng.xml</suiteXmlFile>
+                <suiteXmlFile>testng1.xml</suiteXmlFile>
             </properties>
         </profile>
         <profile>
@@ -34,7 +34,7 @@
                 <browser.version>51.0</browser.version>
                 <browser.platform>windows</browser.platform>
 
-                <suiteXmlFile>testng1.xml</suiteXmlFile>
+                <suiteXmlFile>testng3.xml</suiteXmlFile>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
