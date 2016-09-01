@@ -2,7 +2,7 @@
 <suite name="Test runner" verbose="1" parallel="tests" configfailurepolicy="continue" thread-count="10">
 
     <test name="WindowsChrome" parallel="tests">
-        <parameter name="browser" value="firefox" />
+        <parameter name="browser" value="chrome" />
         <classes>
             <class name="cucumberTests.selenium.FunctionalRunnerTest"/>
         </classes>

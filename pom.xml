@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <suiteXmlFile>testng</suiteXmlFile>
+        <suiteFileName>testng</suiteFileName>
     </properties>
 
     <profiles>
@@ -22,7 +22,7 @@
                 <browser.version>47.0</browser.version>
                 <browser.platform>windows</browser.platform>
 
-                <suiteXmlFile>testng1</suiteXmlFile>
+                <suiteFileName>testng1</suiteFileName>
             </properties>
         </profile>
         <profile>
@@ -31,36 +31,11 @@
                 <browser.name>chrome</browser.name>
                 <browser.version>51.0</browser.version>
                 <browser.platform>windows</browser.platform>
-                <suiteXmlFile>testng3</suiteXmlFile>
-            </properties>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-        </profile>
-        <profile>
-            <id>ie</id>
-            <properties>
-                <browser.name>ie</browser.name>
-                <browser.version>11.0</browser.version>
-                <browser.platform>windows</browser.platform>
+
+                <suiteFileName>testng2</suiteFileName>
             </properties>
         </profile>
-        <profile>
-            <id>safari</id>
-            <properties>
-                <browser.name>safari</browser.name>
-                <browser.version>5.1</browser.version>
-                <browser.platform>windows</browser.platform>
-            </properties>
-        </profile>
-        <profile>
-            <id>phantomjs</id>
-            <properties>
-                <browser.name>phantomjs</browser.name>
-                <browser.version>1.2.1</browser.version>
-                <browser.platform>windows</browser.platform>
-            </properties>
-        </profile>
+
 
         <!-- hub -->
         <profile>
@@ -308,7 +283,7 @@
                 <version>2.19</version>
                 <configuration>
                     <suiteXmlFiles>
-                            <suiteXmlFile>src/test/resources/${suiteXmlFile}.xml</suiteXmlFile>
+                            <suiteXmlFile>src/test/resources/${suiteFileName}.xml</suiteXmlFile>
                          </suiteXmlFiles>
                 </configuration>
             </plugin>
