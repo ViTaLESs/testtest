@@ -10,9 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!--<tags>"@Login"</tags>-->
-        <!--<tags>${tags}</tags>-->
-        <suiteXmlFile>testng.xml</suiteXmlFile>
+        <suiteXmlFile>testng</suiteXmlFile>
     </properties>
 
     <profiles>
@@ -24,7 +22,7 @@
                 <browser.version>47.0</browser.version>
                 <browser.platform>windows</browser.platform>
 
-                <suiteXmlFile>testng1.xml</suiteXmlFile>
+                <suiteXmlFile>testng1</suiteXmlFile>
             </properties>
         </profile>
         <profile>
@@ -33,8 +31,7 @@
                 <browser.name>chrome</browser.name>
                 <browser.version>51.0</browser.version>
                 <browser.platform>windows</browser.platform>
-
-                <suiteXmlFile>testng3.xml</suiteXmlFile>
+                <suiteXmlFile>testng3</suiteXmlFile>
             </properties>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -72,8 +69,6 @@
                 <env>local</env>
                 <grid2.hub>http://192.168.1.6:4444/wd/hub</grid2.hub>
             </properties>
-
-            <!--    For debug    -->
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -85,9 +80,6 @@
                 <env>ellosHub</env>
                 <grid2.hub>http://seleniumhub:4444/wd/hub</grid2.hub>
             </properties>
-<!--            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>-->
         </profile>
 
         <!-- environmental -->
@@ -316,7 +308,7 @@
                 <version>2.19</version>
                 <configuration>
                     <suiteXmlFiles>
-                            <suiteXmlFile>src/test/resources/${suiteXmlFile}</suiteXmlFile>
+                            <suiteXmlFile>src/test/resources/${suiteXmlFile}.xml</suiteXmlFile>
                          </suiteXmlFiles>
                 </configuration>
             </plugin>
